@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>RoutedApp</title>
-</head>
-<body>
+<h1>Search</h1>
 
-</body>
-</html>
+<p>
+  <input type="text" #newquery>
+  <button (click)="submit(newquery)">Search</button>
+</p>
+
+<div *ngIf="results">
+   {{results | json}}
+</div>
+
